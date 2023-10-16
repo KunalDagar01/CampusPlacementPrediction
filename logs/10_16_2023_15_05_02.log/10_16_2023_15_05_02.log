@@ -1,0 +1,18 @@
+[ 2023-10-16 15:05:02,773 ] 19 root - INFO - At model trainier
+[ 2023-10-16 15:05:02,773 ] 14 root - INFO - Data Ingestion is started
+[ 2023-10-16 15:05:02,779 ] 18 root - INFO - Saving data
+[ 2023-10-16 15:05:02,783 ] 23 root - INFO - Ingestion success
+[ 2023-10-16 15:05:02,783 ] 24 root - INFO - Training data stored at artifacts\train.csv
+[ 2023-10-16 15:05:02,783 ] 25 root - INFO - Test path stored at artifacts\test.csv
+[ 2023-10-16 15:05:02,783 ] 17 root - INFO - Initiating Pipeline
+[ 2023-10-16 15:05:02,796 ] 23 root - INFO - Splitting data in train and test
+[ 2023-10-16 15:05:02,797 ] 33 root - INFO - Establishing Pipeline
+[ 2023-10-16 15:05:02,797 ] 55 root - INFO - Pipeline creation done successfully
+[ 2023-10-16 15:05:02,798 ] 57 root - INFO - Pipleine Successfully created saving pickle file of preprocessor
+[ 2023-10-16 15:05:02,798 ] 24 root - INFO - Splitting Sucess
+[ 2023-10-16 15:05:02,798 ] 25 root - INFO - Got Index(['Unnamed: 0', 'ssc_p', 'ssc_b', 'hsc_p', 'hsc_b', 'hsc_s', 'degree_p',
+       'degree_t', 'workex', 'etest_p', 'specialisation', 'mba_p', 'salary'],
+      dtype='object') as column names
+[ 2023-10-16 15:05:02,799 ] 31 root - INFO - Transforming data
+[ 2023-10-16 15:05:02,813 ] 36 root - INFO - Doing hyperparameter tuning for Decision Tree Classifier
+[ 2023-10-16 15:05:02,819 ] 72 root - INFO - Some Error has occured

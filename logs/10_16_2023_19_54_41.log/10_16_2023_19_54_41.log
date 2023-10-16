@@ -1,0 +1,20 @@
+[ 2023-10-16 19:54:41,962 ] 20 root - INFO - At model trainier
+[ 2023-10-16 19:54:41,962 ] 14 root - INFO - Data Ingestion is started
+[ 2023-10-16 19:54:42,114 ] 18 root - INFO - Saving data
+[ 2023-10-16 19:54:42,131 ] 23 root - INFO - Ingestion success
+[ 2023-10-16 19:54:42,131 ] 24 root - INFO - Training data stored at artifacts\train.csv
+[ 2023-10-16 19:54:42,134 ] 25 root - INFO - Test path stored at artifacts\test.csv
+[ 2023-10-16 19:54:42,134 ] 17 root - INFO - Initiating Pipeline
+[ 2023-10-16 19:54:42,188 ] 23 root - INFO - Splitting data in train and test
+[ 2023-10-16 19:54:42,205 ] 33 root - INFO - Establishing Pipeline
+[ 2023-10-16 19:54:42,206 ] 55 root - INFO - Pipeline creation done successfully
+[ 2023-10-16 19:54:42,208 ] 57 root - INFO - Pipleine Successfully created saving pickle file of preprocessor
+[ 2023-10-16 19:54:42,208 ] 25 root - INFO - Splitting Sucess
+[ 2023-10-16 19:54:42,209 ] 26 root - INFO - Got Index(['ssc_p', 'ssc_b', 'hsc_p', 'hsc_b', 'hsc_s', 'degree_p', 'degree_t',
+       'workex', 'etest_p', 'specialisation', 'mba_p'],
+      dtype='object') as column names
+[ 2023-10-16 19:54:42,211 ] 32 root - INFO - Transforming data
+[ 2023-10-16 19:54:42,367 ] 37 root - INFO - Doing hyperparameter tuning for Random Forest Classifier
+[ 2023-10-16 19:54:42,371 ] 41 root - INFO - Applying smote
+[ 2023-10-16 19:54:42,978 ] 45 root - INFO - Got (208, 19) as new rows and columns
+[ 2023-10-16 19:54:43,137 ] 80 root - INFO - Some Error has occured

@@ -1,0 +1,7 @@
+setup.py
+CapmusPlacementPrediction.egg-info/PKG-INFO
+CapmusPlacementPrediction.egg-info/SOURCES.txt
+CapmusPlacementPrediction.egg-info/dependency_links.txt
+CapmusPlacementPrediction.egg-info/requires.txt
+CapmusPlacementPrediction.egg-info/top_level.txt
+src/__init__.py

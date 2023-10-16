@@ -1,0 +1,98 @@
+[ 2023-10-16 20:20:38,048 ] 12 root - INFO - In App.py
+[ 2023-10-16 20:20:38,048 ] 15 root - INFO - Showing Index page
+[ 2023-10-16 20:20:38,268 ] 96 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.37:8080
+[ 2023-10-16 20:20:38,268 ] 96 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2023-10-16 20:20:56,338 ] 96 werkzeug - INFO - 192.168.1.37 - - [16/Oct/2023 20:20:56] "GET / HTTP/1.1" 200 -
+[ 2023-10-16 20:20:56,423 ] 96 werkzeug - INFO - 192.168.1.37 - - [16/Oct/2023 20:20:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2023-10-16 20:21:24,270 ] 23 root - INFO - Submit command recieved
+[ 2023-10-16 20:21:24,270 ] 40 root - INFO - recieved values [67.0, 'Others', 63.0, 'Others', 'Science', 64.0, 'Sci&Tech', 'No', 60.0, 'Mkt&Fin', 61.87]
+[ 2023-10-16 20:21:24,270 ] 16 root - INFO - In Predict py importing models
+[ 2023-10-16 20:21:24,627 ] 24 root - INFO - Data Transoformation
+[ 2023-10-16 20:21:24,632 ] 26 root - INFO - Predicting Results
+[ 2023-10-16 20:21:24,651 ] 33 root - INFO - Result is 1
+[ 2023-10-16 20:21:24,651 ] 51 root - INFO - Done Prediction
+[ 2023-10-16 20:21:24,652 ] 52 root - INFO - Took 0.3802969455718994 seconds for execution
+[ 2023-10-16 20:21:24,653 ] 96 werkzeug - INFO - 192.168.1.37 - - [16/Oct/2023 20:21:24] "POST /submit HTTP/1.1" 200 -
+[ 2023-10-16 20:22:01,077 ] 23 root - INFO - Submit command recieved
+[ 2023-10-16 20:22:01,078 ] 40 root - INFO - recieved values [70.0, 'Others', 40.0, 'Others', 'Arts', 40.0, 'select from here', 'No', 40.0, 'Mkt&HR', 40.0]
+[ 2023-10-16 20:22:01,078 ] 16 root - INFO - In Predict py importing models
+[ 2023-10-16 20:22:01,082 ] 24 root - INFO - Data Transoformation
+[ 2023-10-16 20:22:01,086 ] 26 root - INFO - Predicting Results
+[ 2023-10-16 20:22:01,090 ] 39 root - INFO - Error occured in python script name [f:\New folder\CampusPlacementPrediction\prediction.py] line number [27] error message[Found unknown categories ['select from here'] in column 3 during transform]
+[ 2023-10-16 20:22:01,090 ] 825 app - ERROR - Exception on /submit [POST]
+Traceback (most recent call last):
+  File "f:\New folder\CampusPlacementPrediction\prediction.py", line 27, in prediction
+    data = preprocessor.transform(data)
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\sklearn\utils\_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\sklearn\compose\_column_transformer.py", line 827, in transform
+    Xs = self._fit_transform(
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\sklearn\compose\_column_transformer.py", line 681, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\sklearn\utils\parallel.py", line 65, in __call__
+    return super().__call__(iterable_with_config)
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\joblib\parallel.py", line 1863, in __call__
+    return output if self.return_generator else list(output)
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\joblib\parallel.py", line 1792, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\sklearn\utils\parallel.py", line 127, in __call__
+    return self.function(*args, **kwargs)
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\sklearn\pipeline.py", line 940, in _transform_one
+    res = transformer.transform(X)
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\sklearn\pipeline.py", line 696, in transform
+    Xt = transform.transform(Xt)
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\sklearn\utils\_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\sklearn\preprocessing\_encoders.py", line 1027, in transform
+    X_int, X_mask = self._transform(
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\sklearn\preprocessing\_encoders.py", line 200, in _transform
+    raise ValueError(msg)
+ValueError: Found unknown categories ['select from here'] in column 3 during transform
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "f:/New folder/CampusPlacementPrediction/app.py", line 41, in submit
+    result = prediction(inputs)
+  File "f:\New folder\CampusPlacementPrediction\prediction.py", line 40, in prediction
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script name [f:\New folder\CampusPlacementPrediction\prediction.py] line number [27] error message[Found unknown categories ['select from here'] in column 3 during transform]
+[ 2023-10-16 20:22:01,587 ] 96 werkzeug - INFO - 192.168.1.37 - - [16/Oct/2023 20:22:01] "[35m[1mPOST /submit HTTP/1.1[0m" 500 -
+[ 2023-10-16 20:22:26,129 ] 23 root - INFO - Submit command recieved
+[ 2023-10-16 20:22:26,130 ] 40 root - INFO - recieved values [70.0, 'Others', 40.0, 'Others', 'Arts', 40.0, 'Others', 'No', 40.0, 'Mkt&HR', 40.0]
+[ 2023-10-16 20:22:26,130 ] 16 root - INFO - In Predict py importing models
+[ 2023-10-16 20:22:26,138 ] 24 root - INFO - Data Transoformation
+[ 2023-10-16 20:22:26,141 ] 26 root - INFO - Predicting Results
+[ 2023-10-16 20:22:26,160 ] 30 root - INFO - Result is 0
+[ 2023-10-16 20:22:26,160 ] 45 root - INFO - Done Prediction
+[ 2023-10-16 20:22:26,160 ] 46 root - INFO - Took 0.03154277801513672seconds for execution
+[ 2023-10-16 20:22:26,160 ] 96 werkzeug - INFO - 192.168.1.37 - - [16/Oct/2023 20:22:26] "POST /submit HTTP/1.1" 200 -
+[ 2023-10-16 20:23:00,498 ] 23 root - INFO - Submit command recieved
+[ 2023-10-16 20:23:00,499 ] 40 root - INFO - recieved values [40.0, 'Others', 40.0, 'Others', 'Science', 40.0, 'Others', 'No', 40.0, 'Mkt&HR', 70.0]
+[ 2023-10-16 20:23:00,499 ] 16 root - INFO - In Predict py importing models
+[ 2023-10-16 20:23:00,499 ] 24 root - INFO - Data Transoformation
+[ 2023-10-16 20:23:00,499 ] 26 root - INFO - Predicting Results
+[ 2023-10-16 20:23:00,510 ] 30 root - INFO - Result is 0
+[ 2023-10-16 20:23:00,510 ] 45 root - INFO - Done Prediction
+[ 2023-10-16 20:23:00,510 ] 46 root - INFO - Took 0.011573076248168945seconds for execution
+[ 2023-10-16 20:23:00,510 ] 96 werkzeug - INFO - 192.168.1.37 - - [16/Oct/2023 20:23:00] "POST /submit HTTP/1.1" 200 -
+[ 2023-10-16 20:23:32,460 ] 23 root - INFO - Submit command recieved
+[ 2023-10-16 20:23:32,463 ] 40 root - INFO - recieved values [60.0, 'Others', 60.0, 'Others', 'Science', 64.0, 'Sci&Tech', 'Yes', 60.0, 'Mkt&HR', 60.0]
+[ 2023-10-16 20:23:32,463 ] 16 root - INFO - In Predict py importing models
+[ 2023-10-16 20:23:32,463 ] 24 root - INFO - Data Transoformation
+[ 2023-10-16 20:23:32,463 ] 26 root - INFO - Predicting Results
+[ 2023-10-16 20:23:32,479 ] 33 root - INFO - Result is 1
+[ 2023-10-16 20:23:32,479 ] 51 root - INFO - Done Prediction
+[ 2023-10-16 20:23:32,479 ] 52 root - INFO - Took 0.018425941467285156 seconds for execution
+[ 2023-10-16 20:23:32,479 ] 96 werkzeug - INFO - 192.168.1.37 - - [16/Oct/2023 20:23:32] "POST /submit HTTP/1.1" 200 -

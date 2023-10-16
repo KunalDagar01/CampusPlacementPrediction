@@ -1,0 +1,46 @@
+[ 2023-10-16 20:18:31,692 ] 20 root - INFO - At model trainier
+[ 2023-10-16 20:18:31,692 ] 14 root - INFO - Data Ingestion is started
+[ 2023-10-16 20:18:31,693 ] 18 root - INFO - Saving data
+[ 2023-10-16 20:18:31,703 ] 23 root - INFO - Ingestion success
+[ 2023-10-16 20:18:31,703 ] 24 root - INFO - Training data stored at artifacts\train.csv
+[ 2023-10-16 20:18:31,703 ] 25 root - INFO - Test path stored at artifacts\test.csv
+[ 2023-10-16 20:18:31,703 ] 17 root - INFO - Initiating Pipeline
+[ 2023-10-16 20:18:31,721 ] 23 root - INFO - Splitting data in train and test
+[ 2023-10-16 20:18:31,724 ] 33 root - INFO - Establishing Pipeline
+[ 2023-10-16 20:18:31,724 ] 55 root - INFO - Pipeline creation done successfully
+[ 2023-10-16 20:18:31,724 ] 57 root - INFO - Pipleine Successfully created saving pickle file of preprocessor
+[ 2023-10-16 20:18:31,724 ] 25 root - INFO - Splitting Sucess
+[ 2023-10-16 20:18:31,724 ] 26 root - INFO - Got Index(['ssc_p', 'ssc_b', 'hsc_p', 'hsc_b', 'hsc_s', 'degree_p', 'degree_t',
+       'workex', 'etest_p', 'specialisation', 'mba_p'],
+      dtype='object') as column names
+[ 2023-10-16 20:18:31,724 ] 32 root - INFO - Transforming data
+[ 2023-10-16 20:18:31,787 ] 37 root - INFO -    num_pipeline__ssc_p  ...  cat_pipeline__specialisation_Mkt&HR
+0            -0.033107  ...                                  1.0
+1            -0.396059  ...                                  0.0
+2            -1.212701  ...                                  1.0
+3            -1.394177  ...                                  1.0
+4            -1.394177  ...                                  0.0
+
+[5 rows x 19 columns]
+[ 2023-10-16 20:18:31,787 ] 39 root - INFO - Doing hyperparameter tuning for SVC Classifier
+[ 2023-10-16 20:18:31,787 ] 43 root - INFO - Applying smote
+[ 2023-10-16 20:18:32,004 ] 47 root - INFO - Got (208, 19) as new rows and columns
+[ 2023-10-16 20:18:33,140 ] 57 root - INFO - Done hyperpamater tuning
+[ 2023-10-16 20:18:33,140 ] 64 root - INFO - Model Training
+[ 2023-10-16 20:18:33,140 ] 67 root - INFO - Training Success
+[ 2023-10-16 20:18:33,155 ] 73 root - INFO - Training success
+[ 2023-10-16 20:18:33,155 ] 74 root - INFO - Accuracy is 78.46153846153847 %
+[ 2023-10-16 20:18:33,155 ] 75 root - INFO - Classification report 
+               precision    recall  f1-score   support
+
+           0       0.68      0.62      0.65        21
+           1       0.83      0.86      0.84        44
+
+    accuracy                           0.78        65
+   macro avg       0.76      0.74      0.75        65
+weighted avg       0.78      0.78      0.78        65
+ 
+[ 2023-10-16 20:18:33,155 ] 76 root - INFO - confusion matrix 
+ [[13  8]
+ [ 6 38]]
+[ 2023-10-16 20:18:33,155 ] 77 root - INFO - saved model file at models

@@ -1,0 +1,24 @@
+[ 2023-10-16 17:15:29,667 ] 12 root - INFO - In App.py
+[ 2023-10-16 17:15:29,669 ] 15 root - INFO - Showing Index page
+[ 2023-10-16 17:15:29,703 ] 96 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.37:8080
+[ 2023-10-16 17:15:29,704 ] 96 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2023-10-16 17:15:59,606 ] 96 werkzeug - INFO - 127.0.0.1 - - [16/Oct/2023 17:15:59] "GET / HTTP/1.1" 200 -
+[ 2023-10-16 17:15:59,712 ] 96 werkzeug - INFO - 127.0.0.1 - - [16/Oct/2023 17:15:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2023-10-16 17:16:44,607 ] 23 root - INFO - Submit command recieved
+[ 2023-10-16 17:16:44,610 ] 825 app - ERROR - Exception on /submit [POST]
+Traceback (most recent call last):
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\New folder\CampusPlacementPrediction\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "f:/New folder/CampusPlacementPrediction/app.py", line 27, in submit
+    age = int(request.form.get('age'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[ 2023-10-16 17:16:44,612 ] 96 werkzeug - INFO - 127.0.0.1 - - [16/Oct/2023 17:16:44] "[35m[1mPOST /submit HTTP/1.1[0m" 500 -

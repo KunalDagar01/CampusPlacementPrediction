@@ -1,0 +1,36 @@
+[ 2023-10-16 16:14:14,013 ] 19 root - INFO - At model trainier
+[ 2023-10-16 16:14:14,013 ] 14 root - INFO - Data Ingestion is started
+[ 2023-10-16 16:14:14,021 ] 18 root - INFO - Saving data
+[ 2023-10-16 16:14:14,048 ] 23 root - INFO - Ingestion success
+[ 2023-10-16 16:14:14,048 ] 24 root - INFO - Training data stored at artifacts\train.csv
+[ 2023-10-16 16:14:14,048 ] 25 root - INFO - Test path stored at artifacts\test.csv
+[ 2023-10-16 16:14:14,048 ] 17 root - INFO - Initiating Pipeline
+[ 2023-10-16 16:14:14,060 ] 23 root - INFO - Splitting data in train and test
+[ 2023-10-16 16:14:14,063 ] 33 root - INFO - Establishing Pipeline
+[ 2023-10-16 16:14:14,063 ] 55 root - INFO - Pipeline creation done successfully
+[ 2023-10-16 16:14:14,064 ] 57 root - INFO - Pipleine Successfully created saving pickle file of preprocessor
+[ 2023-10-16 16:14:14,064 ] 24 root - INFO - Splitting Sucess
+[ 2023-10-16 16:14:14,064 ] 25 root - INFO - Got Index(['ssc_p', 'ssc_b', 'hsc_p', 'hsc_b', 'hsc_s', 'degree_p', 'degree_t',
+       'workex', 'etest_p', 'specialisation', 'mba_p'],
+      dtype='object') as column names
+[ 2023-10-16 16:14:14,065 ] 31 root - INFO - Transforming data
+[ 2023-10-16 16:14:14,084 ] 36 root - INFO - Doing hyperparameter tuning for Random Forest Classifier
+[ 2023-10-16 16:14:30,033 ] 47 root - INFO - Done hyperpamater tuning
+[ 2023-10-16 16:14:30,033 ] 54 root - INFO - Model Training
+[ 2023-10-16 16:14:30,096 ] 57 root - INFO - Training Success
+[ 2023-10-16 16:14:30,107 ] 63 root - INFO - Training success
+[ 2023-10-16 16:14:30,107 ] 64 root - INFO - Accuracy is 80.0 %
+[ 2023-10-16 16:14:30,107 ] 65 root - INFO - Classification report 
+               precision    recall  f1-score   support
+
+           0       0.83      0.48      0.61        21
+           1       0.79      0.95      0.87        44
+
+    accuracy                           0.80        65
+   macro avg       0.81      0.72      0.74        65
+weighted avg       0.81      0.80      0.78        65
+ 
+[ 2023-10-16 16:14:30,107 ] 66 root - INFO - confusion matrix 
+ [[10 11]
+ [ 2 42]]
+[ 2023-10-16 16:14:30,107 ] 67 root - INFO - saved model file at models

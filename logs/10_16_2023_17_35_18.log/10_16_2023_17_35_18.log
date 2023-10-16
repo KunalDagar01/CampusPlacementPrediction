@@ -1,0 +1,35 @@
+[ 2023-10-16 17:35:19,132 ] 12 root - INFO - In App.py
+[ 2023-10-16 17:35:19,133 ] 15 root - INFO - Showing Index page
+[ 2023-10-16 17:35:19,157 ] 96 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.37:8080
+[ 2023-10-16 17:35:19,157 ] 96 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2023-10-16 17:35:24,492 ] 96 werkzeug - INFO - 127.0.0.1 - - [16/Oct/2023 17:35:24] "GET / HTTP/1.1" 200 -
+[ 2023-10-16 17:35:51,898 ] 23 root - INFO - Submit command recieved
+[ 2023-10-16 17:35:51,901 ] 40 root - INFO - recieved values [67.0, 'Others', 63.0, 'Others', 'Science', 64.0, 'Sci&Tech', 'No', 60.0, 'Mkt&Fin', 61.87]
+[ 2023-10-16 17:35:51,902 ] 16 root - INFO - In Predict py importing models
+[ 2023-10-16 17:35:52,091 ] 24 root - INFO - Data Transoformation
+[ 2023-10-16 17:35:52,092 ] 26 root - INFO - Predicting Results
+[ 2023-10-16 17:35:52,099 ] 33 root - INFO - Result is 1
+[ 2023-10-16 17:35:52,100 ] 51 root - INFO - Done Prediction
+[ 2023-10-16 17:35:52,100 ] 52 root - INFO - Took 0.2014617919921875 seconds for execution
+[ 2023-10-16 17:35:52,100 ] 96 werkzeug - INFO - 127.0.0.1 - - [16/Oct/2023 17:35:52] "POST /submit HTTP/1.1" 200 -
+[ 2023-10-16 17:37:21,545 ] 23 root - INFO - Submit command recieved
+[ 2023-10-16 17:37:21,546 ] 40 root - INFO - recieved values [67.0, 'Others', 63.0, 'Others', 'Science', 64.0, 'Sci&Tech', 'No', 60.0, 'Mkt&Fin', 61.87]
+[ 2023-10-16 17:37:21,546 ] 16 root - INFO - In Predict py importing models
+[ 2023-10-16 17:37:21,548 ] 24 root - INFO - Data Transoformation
+[ 2023-10-16 17:37:21,549 ] 26 root - INFO - Predicting Results
+[ 2023-10-16 17:37:21,561 ] 33 root - INFO - Result is 1
+[ 2023-10-16 17:37:21,561 ] 51 root - INFO - Done Prediction
+[ 2023-10-16 17:37:21,561 ] 52 root - INFO - Took 0.014997243881225586 seconds for execution
+[ 2023-10-16 17:37:21,562 ] 96 werkzeug - INFO - 127.0.0.1 - - [16/Oct/2023 17:37:21] "POST /submit HTTP/1.1" 200 -
+[ 2023-10-16 17:38:13,249 ] 23 root - INFO - Submit command recieved
+[ 2023-10-16 17:38:13,252 ] 40 root - INFO - recieved values [67.0, 'Others', 63.0, 'Others', 'Science', 64.0, 'Sci&Tech', 'No', 60.0, 'Mkt&Fin', 61.87]
+[ 2023-10-16 17:38:13,253 ] 16 root - INFO - In Predict py importing models
+[ 2023-10-16 17:38:13,254 ] 24 root - INFO - Data Transoformation
+[ 2023-10-16 17:38:13,256 ] 26 root - INFO - Predicting Results
+[ 2023-10-16 17:38:13,266 ] 33 root - INFO - Result is 1
+[ 2023-10-16 17:38:13,266 ] 51 root - INFO - Done Prediction
+[ 2023-10-16 17:38:13,266 ] 52 root - INFO - Took 0.015996456146240234 seconds for execution
+[ 2023-10-16 17:38:13,266 ] 96 werkzeug - INFO - 127.0.0.1 - - [16/Oct/2023 17:38:13] "POST /submit HTTP/1.1" 200 -
